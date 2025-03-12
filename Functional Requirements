@@ -1,0 +1,58 @@
+1. Tenant Management
+Store owners should be able to register their stores in the system.
+
+Admins should be able to approve or reject store registrations.
+
+The system should track lease agreements, including start date, end date, and rent amount.
+
+Automated reminders for rent payments and lease renewals.
+
+Store owners should be able to update their store information (e.g., contact details, operating hours).
+
+2. Customer Management
+Customers should be able to provide feedback through the system.
+
+The system should support loyalty programs (e.g., points for purchases).
+
+Customers should be able to check parking availability and book parking slots.
+
+Customers should receive notifications about mall events and promotions.
+
+3. Sales and Revenue Tracking
+Store owners should be able to upload daily sales data.
+
+The system should generate sales reports for individual stores and the entire mall.
+
+Admins should be able to view revenue trends and analyze performance.
+
+Automated rent collection and invoice generation.
+
+4. Maintenance and Facility Management
+Tenants and customers should be able to submit maintenance requests.
+
+Admins should be able to assign work orders to maintenance staff.
+
+The system should track the status of maintenance requests (e.g., pending, in progress, completed).
+
+Real-time monitoring of mall facilities (e.g., elevators, escalators, restrooms).
+
+5. Security and Surveillance
+Security staff should be able to log and track incidents (e.g., theft, accidents).
+
+Integration with CCTV systems for real-time monitoring.
+
+Access control for restricted areas (e.g., admin offices, storage rooms).
+
+6. Marketing and Promotions
+Admins should be able to create and manage mall events (e.g., sales, festivals).
+
+The system should support promotional campaigns (e.g., discounts, coupons).
+
+Digital signage for displaying advertisements and announcements.
+
+7. Analytics and Reporting
+The system should track and analyze foot traffic patterns.
+
+Customer demographics and preferences should be gathered and analyzed.
+
+Admins should have access to dashboards displaying key metrics (e.g., sales, foot traffic, maintenance requests).
