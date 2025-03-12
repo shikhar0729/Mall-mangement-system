@@ -1,0 +1,58 @@
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+
+function App() {
+  const [tenants, setTenants] = useState([]);
+  const [feedback, setFeedback] = useState([]);
+  const [maintenance, setMaintenance] = useState([]);
+
+  // Fetch tenants
+  useEffect(() => {
+    axios.get("http://localhost:5000/api/tenants")
+      .then((response) => setTenants(response.data))
+      .catch((error) => console.error(error));
+  }, []);
+
+  // Fetch feedback
+  useEffect(() => {
+    axios.get("http://localhost:5000/api/feedback")
+      .then((response) => setFeedback(response.data))
+      .catch((error) => console.error(error));
+  }, []);
+
+  // Fetch maintenance requests
+  useEffect(() => {
+    axios.get("http://localhost:5000/api/maintenance")
+      .then((response) => setMaintenance(response.data))
+      .catch((error) => console.error(error));
+  }, []);
+
+  return (
+    <div>
+      <h1>Mall Management System</h1>
+
+      <h2>Tenants</h2>
+      <ul>
+        {tenants.map((tenant) => (
+          <li key={tenant._id}>{tenant.storeName} - {tenant.ownerName}</li>
+        ))}
+      </ul>
+
+      <h2>Customer Feedback</h2>
+      <ul>
+        {feedback.map((fb) => (
+          <li key={fb._id}>{fb.customerName} - {fb.message} (Rating: {fb.rating})</li>
+        ))}
+      </ul>
+
+      <h2>Maintenance Requests</h2>
+      <ul>
+        {maintenance.map((req) => (
+          <li key={req._id}>{req.issue} - {req.location} (Status: {req.status})</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default App;
